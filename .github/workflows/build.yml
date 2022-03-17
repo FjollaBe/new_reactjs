@@ -22,6 +22,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
     - name: Build the Docker image
       working-directory: web-app/devops-kubernetes-training-web-main
+      ENV: 
+        IMAGE_TAG: $(date +%s)
       run: |
-        docker build . --file Dockerfile --tag fjollabeqiraj/new_reactjs:$(date +%s)
-        docker push fjollabeqiraj/new_reactjs:$(date +%s)
+        docker build . --file Dockerfile --tag fjollabeqiraj/new_reactjs:$IMAGE_TAG
+        docker push fjollabeqiraj/new_reactjs:$IMAGE_TAG
