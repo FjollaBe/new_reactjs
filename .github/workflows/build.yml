@@ -22,7 +22,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
     - name: Build the Docker image
       working-directory: web-app/devops-kubernetes-training-web-main
-      ENV: 
+      env: 
         IMAGE_TAG: ${{ github.sha }}
       run: |
         docker build . --file Dockerfile --tag fjollabeqiraj/new_reactjs:$IMAGE_TAG
