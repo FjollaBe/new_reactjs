@@ -15,4 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file web-app/devops-kubernetes-training-web-main/Dockerfile --tag fjollabeqiraj/new_reactjs:$(date +%s)
+      working-directory: web-app/devops-kubernetes-training-web-main/
+      run: docker build . --file Dockerfile --tag fjollabeqiraj/new_reactjs:$(date +%s)
