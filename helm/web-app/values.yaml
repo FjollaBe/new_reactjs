@@ -47,7 +47,7 @@ ingress:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:elasticloadbalancing:eu-central-1:313422618945:loadbalancer/app/k8s-k8sappstellartrai-ca3994f048/8b2724085900cc7a
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:elasticloadbalancing:eu-central-1:313422618945:loadbalancer/app/k8s-k8sappstellartrai-ca3994f048/139aef07382e7bf9
     alb.ingress.kubernetes.io/tags: Name=k8s-k8sappstellartrai-ca3994f048
     alb.ingress.kubernetes.io/group.name: k8s-k8sappstellartrai-ca3994f048
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
