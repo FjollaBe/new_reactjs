@@ -47,7 +47,7 @@ ingress:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:313422618945:certificate/2b948ef9-cd81-4976-8432-6eb59882394a
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:313422618945:certificate/34faf059-2729-4687-827e-fcd8d70d97be
     alb.ingress.kubernetes.io/tags: Name=appstellar-training-fjolla, Environment=dev
     alb.ingress.kubernetes.io/group.name: appstellar-training-fjolla
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
